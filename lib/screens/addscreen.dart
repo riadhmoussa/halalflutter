@@ -234,7 +234,7 @@ class _AddScreenState extends State<AddScreen> {
                   style: TextStyle(fontSize: 15),
                 ),
               )),
-          ButtonSubmit(nameButton: "Save", onPressed: () => {})
+          ButtonSubmit(enabled: true, nameButton: "Save", onPressed: () => {})
         ])),
       ),
     );

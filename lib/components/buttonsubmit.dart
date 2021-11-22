@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 class ButtonSubmit extends StatefulWidget {
   final String nameButton;
   final VoidCallback onPressed;
-  const ButtonSubmit({Key? key, this.nameButton = "", required this.onPressed})
+  final bool enabled;
+  const ButtonSubmit(
+      {Key? key,
+      this.nameButton = "",
+      required this.onPressed,
+      required this.enabled})
       : super(key: key);
 
   @override
@@ -23,9 +28,9 @@ class _ButtonSubmitState extends State<ButtonSubmit> {
         ),
         style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
-          primary: Colors.green,
+          primary: widget.enabled ? Colors.green : Colors.green.shade300,
         ),
-        onPressed: widget.onPressed,
+        onPressed: widget.enabled ? widget.onPressed : null,
       ),
     );
   }

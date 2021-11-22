@@ -19,6 +19,7 @@ class _EditProfileState extends State<EditProfile> {
 
     return Scaffold(
       bottomSheet: ButtonSubmit(
+        enabled: true,
         nameButton: "Save",
         onPressed: () => {},
       ),

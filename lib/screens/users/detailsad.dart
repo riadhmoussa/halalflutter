@@ -16,6 +16,7 @@ class _DetailsAdScreenState extends State<DetailsAdScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomSheet: ButtonSubmit(
+        enabled: true,
         nameButton: "Add comment",
         onPressed: () => {
           Navigator.push(

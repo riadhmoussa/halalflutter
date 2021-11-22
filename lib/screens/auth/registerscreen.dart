@@ -20,6 +20,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
     return Scaffold(
       bottomSheet: ButtonSubmit(
+        enabled: true,
         nameButton: "Create an account",
         onPressed: () => {
           Navigator.push(

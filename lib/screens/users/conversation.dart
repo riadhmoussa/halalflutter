@@ -16,6 +16,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         bottomSheet: ButtonSubmit(
+          enabled: true,
           nameButton: "Create an account",
           onPressed: () => {},
         ),
